@@ -2,21 +2,22 @@ import sys
 sys.stdout = open("z88structure.txt", "w")
 
 #input data
-dimension = 3
+dimension = 3 #spatial dimension
 kflag = 0 #1 for cylindrical coordinates
-nodes_dof = 6
-mesh = 2
+nodes_dof = 6 #3 for 3d elements, 6 for 2d elements
+mesh = 2 #2 for 2d elements, 3 for 3d elements
 
-#aurora finite elements numbers
+#below change the name of Salome mesh file
+with open("rura.dat", "r") as mesh_file:
+    mesh_list = mesh_file.readlines()
+
+#aurora finite elements numbers (nothing to change here)
 triangle_number = 24
 quadrilateral_number = 23
 hex8nodes_number = 1
 hex20nodes_number = 10
 tet4nodes_number = 17
 tet10nodes_number = 16
-
-with open("rura.dat", "r") as mesh_file:
-    mesh_list = mesh_file.readlines()
 
 data_number = mesh_list[0].split()
 nodes_number = int(data_number[0])
