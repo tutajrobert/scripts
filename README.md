@@ -6,7 +6,7 @@ Just choose the element number and add Salome mesh file in .dat format.
 
 Some parts of code are commented. These are for automatic groups and boundary conditions creation. Nevertheless Z88 input files have to be very strictly written and this code often works not properly.
 
-# Change these lines in code:
+# change these lines in code:
 
 sys.stdout = open("z88structure.txt", "w")
 
