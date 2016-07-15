@@ -176,7 +176,7 @@ if mesh == 3:
 
 print output_mesh
 
-sys.stdout = open("z88sets.txt", "w")
+"""sys.stdout = open("z88sets.txt", "w")
 
 with open("rura.unv", "r") as sets_file:
     sets_list = sets_file.readlines()
@@ -266,4 +266,4 @@ for i in range(0, len(setsactive_list) - 1):
 
 finish_setsactive = str(setsactive_counter) + output_setsactive
 
-print finish_setsactive
+print finish_setsactive"""
