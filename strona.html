@@ -7,6 +7,7 @@
 
 <style type="text/css">
 body{
+text-align: justify;
 margin:40px auto;
 max-width:650px;
 line-height:1.6;
@@ -33,7 +34,7 @@ font-style:oblique;
 code{
 color:#888;
 font-family:"Courier";
-line-height:1.4;
+line-height:1.0;
 }
 
 name{
@@ -44,6 +45,16 @@ color:#555;
 footer{
 font-size:13px;
 padding:10px 0;
+}
+
+emph{
+font-size:16px;
+color:#222;
+}
+
+menu{
+padding: 0 0;
+background-color: #d6d6d6;
 }
 
 </style>
@@ -59,6 +70,16 @@ padding:10px 0;
 </header>
 </center>
 
+<menu>
+<center>
+<a href="">Main</a>&nbsp;&nbsp; // &nbsp;&nbsp;
+<a href="">Instructions</a>&nbsp;&nbsp; // &nbsp;&nbsp;
+<a href="">Examples</a>&nbsp;&nbsp; // &nbsp;&nbsp;
+<a href="">Tutorial</a>&nbsp;&nbsp; // &nbsp;&nbsp;
+<a href="">File structure</a>
+</center>
+</menu>
+
 <h2>About this awesome piece of software</h2>
 <p>Graphical Re-solver of T4s, in short also known as <code>GRoT></code>, is a computational software based on finite element method FEM applied to linear static calculation of structural strength in state of plane stress or strain. 
 Its most unique function is fun and easy input of geometry of models, that is directly from an image saved as bitmap file and prepared in any graphic editor.</p>
@@ -67,6 +88,18 @@ Its most unique function is fun and easy input of geometry of models, that is di
 <p>Name of the software is an extension, rather quite badly fitted to english, of an acronym <code>GRoT></code>. This abbreviation was derived from the full former polish name <name>Graficzny Rozwiązywacz Tarcz</name>. 
 Greater-than symbol was added to this acronym, due to the fact that the polish word <name>grot</name> means arrowhead. Word <name>tarcze</name>, which can be translated to english as shields or disks, is a jargon term of 4-node constant strain rectangle elements T4.
 How to spell that name? Very easy! Just look at IPA pronunciation key <a href="https://en.wiktionary.org/wiki/grot">/ɡrɔt/</a>.</p>
+
+<h2>Installation</h2>
+<p>Graphical Re-solver of T4s requires that Python in at least 3.5 version is on board. Additionally, the following packages are necessary: numpy, matplotlib and pillow.
+
+<br><br><emph>Windows instruction:</emph>
+<br>1. Download and install Anaconda from <a href="https://www.continuum.io/downloads">coninuum.io</a>, which already contains all required packages.
+<br>2. Download and unzip in desired location <code>GRoT></code> from the <a href="https://github.com/tutajrobert/grot">project page</a> on GitHub.
+
+<br><br><emph>Linux instruction:</emph>
+<br>1. Install required packages: python3-numpy, python3-matplotlib and python3-pil.
+<br>- example for Ubuntu system: <code>sudo apt-get install python3-numpy</code>&nbsp;&nbsp;etc.
+<br>2. Download and unzip in desired location <code>GRoT></code> from the <a href="https://github.com/tutajrobert/grot">project page</a> on GitHub.</p>
 
 <footer>Project is maintained by <a href="https://github.com/tutajrobert">tutajrobert</a>. 
 Website style is strongly inspired by the <a href="http://flask.pocoo.org/">Flask webpage</a> and <a href="http://bettermotherfuckingwebsite.com/">better bloody website</a>.
