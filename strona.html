@@ -1,108 +1,49 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>GRoT> - Graphical Re-solver of T4s</title>
-
-<style type="text/css">
-body{
-text-align: justify;
-margin:40px auto;
-max-width:650px;
-line-height:1.6;
-font-size:16px;
-font-family:"Georgia";
-font-weight:400;
-font-style:normal;
-color:#555;
-padding:0 10px;
-}
-	 
-h1,h2,h3{
-line-height:1.2;
-font-family:"Garamond";
-font-weight:400;
-color:#222;
-}
-		 
-a{
-color:#2750C4;
-font-style:oblique;
-}
-
-code{
-color:#888;
-font-family:"Courier";
-line-height:1.0;
-}
-
-name{
-font-style:oblique;
-color:#555;
-}
-
-footer{
-font-size:13px;
-padding:10px 0;
-}
-
-emph{
-font-size:16px;
-color:#222;
-}
-
-menu{
-padding: 0 0;
-background-color: #d6d6d6;
-}
-
-</style>
-
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GRoT> Graphical Resolver of T4s</title>
+    <link rel="stylesheet" href="main.css">
 </head>
-<body>
-<center>
+    <body>
+
 <header>
-<h1>Graphical Re-solver of T4s</h1>
-<aside>View the project on GitHub: <a href="https://github.com/tutajrobert/grot">tutajrobert/grot</a>&nbsp;&nbsp;
-//
-&nbsp;&nbsp;Correspond with the author: <a href="mailto:tutajrobert@gmail.com">tutajrobert</a></aside>
+    <h1>Graphical Resolver of T4s</h1>
+    <aside>View the project on GitHub: <a href="https://github.com/tutajrobert/grot"> tutajrobert/grot</a>&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;Correspond with the author: <a href="mailto:tutajrobert@gmail.com">tutajrobert</a></aside>
 </header>
-</center>
 
 <menu>
-<center>
-<a href="">Main</a>&nbsp;&nbsp; // &nbsp;&nbsp;
-<a href="">Instructions</a>&nbsp;&nbsp; // &nbsp;&nbsp;
-<a href="">Examples</a>&nbsp;&nbsp; // &nbsp;&nbsp;
-<a href="">Tutorial</a>&nbsp;&nbsp; // &nbsp;&nbsp;
-<a href="">File structure</a>
-</center>
+    <a href="">Main</a>&nbsp;&nbsp; // &nbsp;&nbsp;
+    <a href="">Installation</a>&nbsp;&nbsp; // &nbsp;&nbsp;
+    <a href="">Manual</a>&nbsp;&nbsp; // &nbsp;&nbsp;
+    <a href="">Examples</a>&nbsp;&nbsp; // &nbsp;&nbsp;
+    <a href="">Tutorial</a>&nbsp;&nbsp; // &nbsp;&nbsp;
+    <a href="">Structure</a>
 </menu>
 
 <h2>About this awesome piece of software</h2>
-<p>Graphical Re-solver of T4s, in short also known as <code>GRoT></code>, is a computational software based on finite element method FEM applied to linear static calculation of structural strength in state of plane stress or strain. 
-Its most unique function is fun and easy input of geometry of models, that is directly from an image saved as bitmap file and prepared in any graphic editor.</p>
+<p>Graphical Resolver of T4s, in short also known as <i>GRoT></i>, is a computational software based on finite element method FEM applied to linear static calculation of structural strength in state of plane stress or strain. Its most unique function is fun and easy input of geometry of models, that is directly from an image saved as bitmap file and prepared in any graphic editor.</p>
 
 <h2>Are you crazy with this name?</h2>
-<p>Name of the software is an extension, rather quite badly fitted to english, of an acronym <code>GRoT></code>. This abbreviation was derived from the full former polish name <name>Graficzny Rozwiązywacz Tarcz</name>. 
-Greater-than symbol was added to this acronym, due to the fact that the polish word <name>grot</name> means arrowhead. Word <name>tarcze</name>, which can be translated to english as shields or disks, is a jargon term of 4-node constant strain rectangle elements T4.
-How to spell that name? Very easy! Just look at IPA pronunciation key <a href="https://en.wiktionary.org/wiki/grot">/ɡrɔt/</a>.</p>
+<p>Name of the software is an extension, rather quite badly fitted to english, of an acronym <i>GRoT></i>. This abbreviation was derived from the full former polish name <i>Graficzny Rozwiązywacz Tarcz</i>. Greater-than symbol was added to this acronym, due to the fact that the polish word <i>grot</i> means arrowhead. Word <i>tarcze</i>, which can be translated to english as shields or disks, is a jargon term of 4-node constant strain rectangle elements T4. How to spell that name? Very easy! Just look at IPA pronunciation key <a href="https://en.wiktionary.org/wiki/grot">/ɡrɔt/</a>.</p>
 
-<h2>Installation</h2>
-<p>Graphical Re-solver of T4s requires that Python in at least 3.5 version is on board. Additionally, the following packages are necessary: numpy, matplotlib and pillow.
+<h2>Features</h2>
+<p>Possibilities of the software are presented in the short list below. Every feature, method and piece of code were included in this project, due to particular reasons. If you, fellow reader, are curious about that, do not hesitate to contact with me.
+<ul>
+    <li>Relly humanalike recognizing of colors, due to RGB to Lab palette conversion</li>
+    <li>Constant strain square finite element with four nodes and linear shape functions according to Rakowski, Kacprzyk <i>Metoda Elementów Skończonych w mechanice konstrukcji</i></li>
+    <li>At-home estethic color map for results viewing pleasure. Fortunately, it is not multicolor <i>jet</i> or <i>rainbow</i> color map, thank you very much!</li>
+    <li>First of all steel and thus Huber's strength hypothesis. Von Misos? Excuse me, but who is he?</li>
+    <li>Signed Huber results, that is equivalent Huber stress with sign of an axiator of a stress tensor (hydrostatic state)</li>
+</ul>
+</p>
 
-<br><br><emph>Windows instruction:</emph>
-<br>1. Download and install Anaconda from <a href="https://www.continuum.io/downloads">coninuum.io</a>, which already contains all required packages.
-<br>2. Download and unzip in desired location <code>GRoT></code> from the <a href="https://github.com/tutajrobert/grot">project page</a> on GitHub.
+<h2>Author</h2>    
+<p>Jako pasjonat wszelkich obliczeń inżynierskich jak i hobbystycznych z chęcią porozmawiam z Tobą, drogi Czytelniku tej strony, jeśli masz jakiekolwiek uwagi lub pytania. Na co dzień w pracy zajmuję się obliczeniami MES konstrukcji stalowych i obliczeniami CFD przepływu w zbiornikach, a po pracy próbuję się w Pythonie, gdzie zwykle dalej coś liczę. Serdecznie zachęcam do kontaktu: tutajrobert@gmail.com. Życzę bezbłędnych rachunków, by więcej czasu przypadło na rozważania co tak naprawdę liczone było!</p>
 
-<br><br><emph>Linux instruction:</emph>
-<br>1. Install required packages: python3-numpy, python3-matplotlib and python3-pil.
-<br>- example for Ubuntu system: <code>sudo apt-get install python3-numpy</code>&nbsp;&nbsp;etc.
-<br>2. Download and unzip in desired location <code>GRoT></code> from the <a href="https://github.com/tutajrobert/grot">project page</a> on GitHub.</p>
-
-<footer>Project is maintained by <a href="https://github.com/tutajrobert">tutajrobert</a>. 
-Website style is strongly inspired by the <a href="http://flask.pocoo.org/">Flask webpage</a> and <a href="http://bettermotherfuckingwebsite.com/">better bloody website</a>.
+<footer>
+    Project is maintained by <a href="https://github.com/tutajrobert">tutajrobert</a>. Website style is strongly inspired by the <a href="http://flask.pocoo.org/">Flask webpage</a> and <a href="http://bettermotherfuckingwebsite.com/">better bloody website</a>.
 </footer>
 
 </body>
